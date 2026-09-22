@@ -1,5 +1,6 @@
 import React from 'react'
-
+//props- parent component can transfer properties to child component.
+//hook- (if use is written anywhere then hook is used) - 
 function ICard({data}) {
   return (
     <div style={{border:"2px solid red",width:"400px",height:"500px",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",backgroundColor:"black", textAlign:'center'}}>
