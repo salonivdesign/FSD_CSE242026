@@ -13,7 +13,6 @@ function ColorChange() {
     function SetBlue(){
         setRed(0); setGreen(0); setBlue(255);
     }
-       
   return (
     <div>
         <div style={{border:"2px solid red",backgroundColor:`rgb(${red}, ${green}, ${blue})`, height:"400px", width:"400px"}}>

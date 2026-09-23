@@ -9,13 +9,17 @@ import MyState from './components/MyState'
 import ICard from './components/ICard'
 import ICardGallery from './components/ICardGallery'
 import ColorChange from './components/ColorChange'
+import SetNameandCollege from './components/SetNameandCollege'
+import ImageManipulation from './components/ImageManipulation'
 function App() {
 
   return (
-    <div style={{border:"2px solid blue",width:"800px",height:"auto",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",backgroundColor:"black", textAlign:'center'}}>
+    <div style={{border:"2px solid blue",width:"800px",height:"600px",display:"flex",justifyContent:"center",backgroundColor:"black", textAlign:'center'}}>
       {/* <ICardGallery/> */}
       {/* <MyState/> */}
-      <ColorChange/>
+      {/* <ColorChange/> */}
+      {/* <SetNameandCollege/> */}
+      <ImageManipulation/>
     </div> 
   )
 }
