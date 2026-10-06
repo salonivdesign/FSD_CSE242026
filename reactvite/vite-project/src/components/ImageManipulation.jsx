@@ -6,6 +6,7 @@ function ImageManipulation() {
     const [red,setRed]=useState(0);
     const [green,setGreen]=useState(0);
     const [blue,setBlue]=useState(0);
+    const [logoAngle,setAngle]=useState(0);
     function increaseHeight(){
         setLogoHeight(logoHeight+10);
     }
@@ -28,10 +29,17 @@ function ImageManipulation() {
         setBlue(Math.random()*255);
     }
 
+    function imageRotate(){
+        setAngle(logoAngle+30);
+    }
+
+
+
+
   return (
     <div><h2>ImageManipulation</h2>
         <div style={{height:'300px', width:'400px', border:'4px solid red', marginLeft:'50px',marginTop:'20px', backgroundColor:`rgb(${red},${green},${blue})`}}>
-            <img src={logo} height={logoHeight} width={logoWidth}/>
+            <img src={logo} height={logoHeight} width={logoWidth} style={{transform:`rotate(${logoAngle}deg)`}}/>
         </div>
         <div>
             <button onClick={increaseHeight}>increaseHeight</button>
@@ -39,6 +47,7 @@ function ImageManipulation() {
             <button onClick={increaseWidth}>increaseWidth</button>
              <button onClick={decreaseWidth}>decreaseWidth</button>
             <button onClick={changeBGColor}>ChangeColor</button>
+            <button onClick={imageRotate}>ImageRotate</button>
         </div>
         
     </div>

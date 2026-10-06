@@ -14,7 +14,7 @@ import ImageManipulation from './components/ImageManipulation'
 function App() {
 
   return (
-    <div style={{border:"2px solid blue",width:"800px",height:"600px",display:"flex",justifyContent:"center",backgroundColor:"black", textAlign:'center'}}>
+    <div style={{border:"2px solid blue",width:"800px",height:"600px",alignItems:"center",display:"flex",flexDirection:"column", justifyContent:"center",backgroundColor:"black", textAlign:'center'}}>
       {/* <ICardGallery/> */}
       {/* <MyState/> */}
       {/* <ColorChange/> */}
