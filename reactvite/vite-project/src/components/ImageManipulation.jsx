@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import logo from "../assets/Logo.jpeg"
+//life cycle of react class componenet-> mounting, updating(rendering), unmounting.--> side-effeccts
+//useEffect{()=>}--> componentDidChange()
 function ImageManipulation() {
     const [logoHeight, setLogoHeight]=useState(200);
     const [logoWidth, setLogoWidth]=useState(200);

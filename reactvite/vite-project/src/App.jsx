@@ -11,6 +11,8 @@ import ICardGallery from './components/ICardGallery'
 import ColorChange from './components/ColorChange'
 import SetNameandCollege from './components/SetNameandCollege'
 import ImageManipulation from './components/ImageManipulation'
+import MyUseEffect from './components/MyUSeEffect'
+import FetchProducts from './components/FetchProducts'
 function App() {
 
   return (
@@ -19,7 +21,9 @@ function App() {
       {/* <MyState/> */}
       {/* <ColorChange/> */}
       {/* <SetNameandCollege/> */}
-      <ImageManipulation/>
+      {/* <ImageManipulation/> */}
+      {/* <MyUseEffect/> */}
+      <FetchProducts/>
     </div> 
   )
 }
